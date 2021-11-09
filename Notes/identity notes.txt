@@ -1,0 +1,51 @@
+Model class and ViewModel class as part of model class folders are created
+
+- IdentityUser is a built in Identity class which will recognize our users with asp.net identity.
+
+public class <classname> : IdentityUser
+{
+
+}
+
+Controllers :
+
+ AccountController:
+
+ private ApplicationSignInManager _signInManager;
+		- all signin activities -- creating a token, check for authentication etc
+
+ private ApplicationUserManager _userManager;
+		- user activities like create user, update user, changepassword
+
+
+IdentityConfig.cs
+   EmailService
+   SmsService			SendGrid
+
+
+Startup.Auth.cs
+
+....authentication settings & for enabling microsoft, google,fb logins
+
+views
+  login, register
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

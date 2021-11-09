@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add New Student</h2>
+
+Student Id @Html.TextBox("TxtId")
+<br />
+Student Name @Html.TextBox("TxtName")
+<br />
+Grade @Html.TextBox("TxtGrade")
+<br />
+Email @Html.TextBox("TxtEmail")
+<br />
+
+<input type="button" id="btnAdd" name="btnAdd" value="Add Student" />
+
+@section Scripts{
+    <script>
+        $("#btnAdd").click(function () {
+            alert("check");
+            var student = {
+                "Id": $("#TxtId").val(),
+                "Name": $("#TxtName").val(),
+                "Grade": $("#TxtGrade").val(),
+                "Email": $("#TxtEmail").val()
+            };
+            var studentrec = JSON.stringify(student);
+
+            $.ajax({
+                url: '/api/Students',
+                cache: false,
+                type: 'Post',
+                contentType: 'application/json;charset=utf-8',
+                data: studentrec,
+                dataType: "json",
+                success: function (data) {
+                    alert("Student Added Successfully");
+                }
+            }).fail(function (reason) {
+                alert("Failed " + reason);
+            });
+        });
+
+    </script>
+    
+    
+    }
+

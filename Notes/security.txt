@@ -1,0 +1,67 @@
+Security in Web Applications
+
+- In web applications security is implemented at different levels
+	- Transport Level Security
+	- Web Server Level Security
+	- Application Level Security
+		- Authentication and Authorization
+
+What is Authentication ?
+  The process of verifying user credentials against the configured data sources and providing the token/identity is called as Authentication.
+
+What is Authorization ?
+   The process of allowing/denying a requested resource based on the identity/token is called as authorization.
+
+Authentication + Authorization = Application Level Security
+
+In ASP.NET MVC we had Forms Authentication Module for implementing authentication and authorization but starting from ASP.NET MVC 3+ FormsAuthentication is deprecated or closed and new Identity system is introduced by microsoft.
+OWIN --> Open Web Interface
+
+ASP.NET Identity is nuget package which simplifies the process of authentication and authorization.
+
+What tasks we need to do ? How to do ? 
+- user creation process
+- change password
+- forgot password
+- login
+- email might be included
+- social networking login
+- sms - 2 factor authentication
+	|
+ASP.NET Identity has support for all the above 
+
+Some(Many) projects demand for seperate implementations i.e other than Identity like JWT is one of the popular authentication/authorization token based system.
+
+JWT -- JSON Web Token 
+
+Flow-->
+       User                                           Application
+				..............
+
+How to do --> Visual studio while creating a project provides an option to add identity to the current project which automatically creates all common requirements for security.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

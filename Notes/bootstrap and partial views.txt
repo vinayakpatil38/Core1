@@ -1,0 +1,66 @@
+BootStrap - for CSS
+
+- Any Quality and Responsive design for application/pages bootstrap is one of the method.
+- Normally if we apply css and handle our designs it is time taking process
+- Using BootStrap we can rapidly and moreover easily apply designs - Most Popular css 	library.
+
+				|
+MVC by default supports bootstrap css file inside content folder.
+
+Bootswatch.com
+
+As a developer applying bootstrap can be done using all the bootstrap css settings awareness or by using bootswatch.com visual outputs and apply the same in our application.
+-----------------------------------------------------------------------------------------
+
+Partial Views**
+--------------
+
+A Partial view is also a view with markup like any other view.
+A Partial view is always used to render its markup inside another markup/view.**
+(unlike a normal view renders as a full view/page)
+
+Advantages of Partial Views:
+
+- View Reusability can be achieved using Partial Views for instance instead of writing a large or fully filled content of view we can create multiple or smaller partial views and use them in one or more pages.
+
+- with above approach we avoid rewriting of same code or duplicating of same code
+
+- Another import use of partial view is for Ajax. Ajax Requires partial page outputs without overwriting the existing page content and this can be achieved using Partial Views in MVC.
+
+- jQuery Ajax is undoubtedly recommended for MVC application but still MVC also has Ajax helpers to implement Ajax using s/s helper methods.
+				|
+@Ajax.ActionLink() & @Ajax.BeginForm() are 2 methods provided for implementing ajax in MVC.
+(Do not forget they require jquery ajax library)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

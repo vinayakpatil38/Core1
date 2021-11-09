@@ -1,0 +1,46 @@
+A Filter is also a program which is written in the form of attribute and which can be applied to method or class/controller.
+
+Based on the filter that we use the execution of method/controller performs differently. Also using Filters we can perform pre and post actions on the methods.
+
+Creating a Project Structure
+-----------------------------
+
+There are no strict rules for creating a project but it is very very important task as the entire team is going to work based on the created structure.
+
+Normally a project structure is one time creation and repeated usage.
+
+We normally target Enterprise applications and design our structure. Clean Architecture, Domain Driven Design etc are most followed methodologies in creating project.
+(Normally It is a lead/PM task to create project structure)
+
+Typically
+
+- Presentation Layer
+- Domain Core Layer
+- Infrastructure Layer
+- Application Layer
+
+
+Clean Architecture
+
+CORE -- done
+
+Infrastructure
+  - Repositories implementation is required -- Repositories
+  - Context class is required - Data
+  - Migrations are required - Migrations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

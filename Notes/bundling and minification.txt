@@ -1,0 +1,80 @@
+Bundling & Minification
+------------------------
+
+In todays web applications both these concepts are very very important
+
+Both bundling and minification are techniques
+
+Performance --> they improve the loading time of a page/application
+
+Every browser has limitations:
+  
+- how many connections you can have for each domain/application ?
+- js code files
+- css files
+....
+
+Bundling : When we develop application we will be using many 3rd party nuget and other js packages which leads to adding lot of .js and .css files. In addition we also create .js and .css files.
+
+Bundling is a process of combining multiple files into a single file - let it be .js, .css or anything.
+			lib1.js - lib1.css
+			lib2.js - lib2.css
+			lib3.js - lib3.css
+			lib4.js - lib4.css
+
+the more no of files - more no of requests leading to page loading performance issues		
+Bundling will bundle multiple files into single result into faster loading of page
+
+ASP.NET MVC performs s/s bundling and how the files should be bundled during response is provided in bundleconfig.cs
+
+
+where in MVC
+- bundleconfig.cs
+
+how to consume ?
+
+    @Styles.Render("~/Content/css")                           -- css
+    @Scripts.Render("~/bundles/modernizr")                    -- js
+
+
+Minification:
+
+Process of applying optimizations to existing code without compromizing on the existing functionality.
+
+- such as removing spaces comments new lines etc
+	|
+resulting in faster page loading/performance
+
+
+debug=false
+BundleTable.EnableOptimizations = true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
